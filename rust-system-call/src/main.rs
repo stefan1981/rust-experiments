@@ -1,7 +1,12 @@
 use std::process::Command;
 
-fn main() {
+fn x() {
     println!("Hello, world!");
+}
+
+fn main() {
+    x();
+
     let output = Command::new("ls")
             .arg("-lisa")
             //.arg("echo hello")
